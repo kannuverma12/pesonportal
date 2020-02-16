@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+
+    <script th:src="@{/static/main.js}"></script>
+    <link th:href="@{/static/main.css}" rel="stylesheet" />
+
+    <head>
+<body ng-app="PersonManagement" ng-controller="PersonController">
+<h3>
+    Person Portal
+</h3>
+<br/>
+<a class="edit-button" ng-click="getAll()">Get All</a>
+<a class="edit-button" ng-click="getAllEmployees('salary')">SortBySalary</a>
+<table border="1">
+    <tr>
+        <th>First Name</th>
+        <th>LAst Name</th>
+        <th>Age</th>
+        <th>Favourite Color</th>
+        <th>Hobby</th>
+    </tr>
+    <!-- $scope.employees -->
+    <tr ng-repeat="person in persons">
+        <td> {{ person.firstName }}</td>
+        <td> {{ person.lastName }}</td>
+        <td> {{ employee.age }}</td>
+        <td >{{ employee.favouriteColor }}</td>
+        <td> {{ person.hobby }}</td>
+    </tr>
+</table>
+</body>
+</html>
