@@ -1,0 +1,10 @@
+com/kv/portal/controller/MainController.class
+com/kv/portal/model/Person$PersonBuilder.class
+com/kv/portal/model/Person.class
+com/kv/portal/controller/PortalController.class
+com/kv/portal/service/impl/PortalServiceImpl.class
+com/kv/portal/utilities/Constants.class
+com/kv/portal/repository/PersonRepository.class
+com/kv/portal/dto/PersonDTO.class
+com/kv/portal/PersonportalApplication.class
+com/kv/portal/service/PortalService.class
